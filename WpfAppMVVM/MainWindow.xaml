@@ -11,10 +11,10 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="Wheat">
         <Grid Background="LightGray" Grid.Row="1" Margin="25,40,25,15">
-            <TextBox Name="FilterTextBox" TextChanged="FilterTextBox_TextChanged" Height="30" Width="200" Margin="0,0,500,300"/>
-            <TextBlock Text="Filter" Height="30" Width="100" TextAlignment="Center" FontSize="20" Margin="0,0,200,300"/>
-            <Button Height="30" Command="{Binding ShowAddUserWindowCommand}" CommandParameter="{x:Reference Name=mainwindow}" Content="Add User" Width="100" VerticalContentAlignment="Center" Padding="5" Margin="550,0,0,300"/>
-            <Button Height="30" Command="{Binding RefreshUserWindowList}" Content="Refresh" Width="100" VerticalContentAlignment="Center" Padding="5" Margin="250,0,0,300"/>
+            <TextBox Name="FilterTextBox" TextChanged="FilterTextBox_TextChanged" Height="30" Width="200" Margin="25,25,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Text="Filter" Height="30" Width="100" TextAlignment="Center" FontSize="20" Margin="225,25,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button Height="30" Command="{Binding ShowAddUserWindowCommand}" CommandParameter="{x:Reference Name=mainwindow}" Content="Add User" Width="100" VerticalContentAlignment="Center" Padding="5" Margin="600,25,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button Height="30" Command="{Binding RefreshUserWindowList}" Content="Refresh" Width="100" VerticalContentAlignment="Center" Padding="5" Margin="450,25,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <ListView Name="UserList" ItemsSource="{Binding Users}" BorderBrush="#cdcdcd" Margin="25,70,25,25" Padding="0">
                 <ListView.View>
                     <GridView>
